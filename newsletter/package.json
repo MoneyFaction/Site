@@ -1,0 +1,17 @@
+{
+  "name": "html-css-inliner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "node inline-css.mjs",
+    "watch": "node inline-css.mjs --watch"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "juice": "^12.2.0"
+  }
+}
