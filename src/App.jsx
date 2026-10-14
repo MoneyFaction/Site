@@ -1,4 +1,5 @@
 import React from 'react';
+import NewsletterEditor from './NewsletterEditor.jsx';
 
 const repositoryUrl = 'https://github.com/MoneyFaction/Site';
 
@@ -41,20 +42,13 @@ function App() {
           <div className="hero-index" aria-hidden="true">01 — 02</div>
         </section>
 
-        <section className="resources" id="resources" aria-labelledby="resources-title">
+        <section className="newsletter-section" id="resources" aria-labelledby="resources-title">
           <div className="section-heading">
             <p className="eyebrow">THE TOOLKIT <span> / 01</span></p>
-            <h2 id="resources-title">Useful things,<br />made for the crew.</h2>
+            <h2 id="resources-title">Offshore Newsletter</h2>
+            <p className="newsletter-intro">Shape a field note, arrange its sections, and see the finished issue take form.</p>
           </div>
-          <article className="resource-item" id="newsletter">
-            <div className="resource-number">01</div>
-            <div className="resource-copy">
-              <p className="resource-status"><span /> IN DEVELOPMENT</p>
-              <h3>Offshore Newsletter</h3>
-              <p>The newsletter is being shaped into an interactive tool. It will live here when it is ready.</p>
-            </div>
-            <span className="resource-arrow" aria-hidden="true">↗</span>
-          </article>
+          <div id="newsletter"><NewsletterEditor /></div>
         </section>
       </main>
 
